@@ -7,7 +7,7 @@ const { tittle, time, text } = Astro.props;
 <section class="bg-white rounded-lg px-5 py-3 drop-shadow-[5px_5px_2px_rgba(119,153,120,100)] static">
     <h2 class="mb-5 text-7xl font-[Edu_TAS_Beginner]">{tittle}</h2>
     <div class="rounded-lg w-72">
-        <Image src={src} alt=""></Image>
+        <Image src={src} alt="" class="rounded-xl"></Image>
     </div>
-    
+    <p class="mb-5 text-3xl font-[Edu_TAS_Beginner]">{text}</p>
 </section>

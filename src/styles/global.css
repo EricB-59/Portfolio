@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-hoverTextHeader: 1s ease-in-out infinite;
+
+  @keyframes hoverTextHeader {
+    0% {
+    }
+    50% {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+    }
+    100% {
+      --tw-scale-x: 125%;
+      --tw-scale-y: 125%;
+      --tw-scale-z: 125%;
+    }
+  }
+}

@@ -3,8 +3,8 @@ import NormalCard from "./card_projects/normal_card.astro";
 import SmallCard from "./card_projects/small_card.astro";
 ---
 
-<section class="grid grid-cols-3 grid-rows-2 gap-12">
-    <div class="col-span-1">
+<section class="grid grid-cols-5 grid-rows-2 gap-12">
+    <div class="col-span-2">
         <SmallCard
             tittle="Swanest" 
             time="4 months" 
@@ -12,7 +12,15 @@ import SmallCard from "./card_projects/small_card.astro";
         >
         </SmallCard>
     </div>
-    <div class="col-span-2">
+    <div class="col-span-3">
+        <NormalCard
+            tittle="Swanest" 
+            time="4 months" 
+            text="Swanest is an innovative dating web application designed to facilitate meaningful connections between people. Developed with Angular on the frontend and Symfony on the backend, Swanest offers advanced features such as profile management, matchmaking, real-time messaging and a modern and accessible design" 
+        >
+        </NormalCard>
+    </div>
+    <div class="col-span-3">
         <NormalCard
             tittle="Swanest" 
             time="4 months" 
@@ -21,14 +29,6 @@ import SmallCard from "./card_projects/small_card.astro";
         </NormalCard>
     </div>
     <div class="col-span-2">
-        <NormalCard
-            tittle="Swanest" 
-            time="4 months" 
-            text="Swanest is an innovative dating web application designed to facilitate meaningful connections between people. Developed with Angular on the frontend and Symfony on the backend, Swanest offers advanced features such as profile management, matchmaking, real-time messaging and a modern and accessible design" 
-        >
-        </NormalCard>
-    </div>
-    <div class="col-span-1">
         <SmallCard
             tittle="Swanest" 
             time="4 months" 

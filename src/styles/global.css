@@ -1,21 +1,6 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 @theme {
-  --animate-hoverTextHeader: 1s ease-in-out infinite;
-
-  @keyframes hoverTextHeader {
-    0% {
-    }
-    50% {
-      --tw-scale-x: 110%;
-      --tw-scale-y: 110%;
-      --tw-scale-z: 110%;
-    }
-    100% {
-      --tw-scale-x: 125%;
-      --tw-scale-y: 125%;
-      --tw-scale-z: 125%;
-    }
-  }
+  --font-hand: "Handlee", sans-serif;
+  --font-int: "Inter", sans-serif;
 }

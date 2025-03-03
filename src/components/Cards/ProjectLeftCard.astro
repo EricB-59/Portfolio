@@ -1,20 +1,19 @@
 ---
-import TechCard from './TechCard.astro'
+import TechCard from "./TechCard.astro";
 const { tittle, time, text, src } = Astro.props;
-
 ---
 
 <article class="grid grid-cols-2 gap-20">
-    <div class="bg-white p-5 rounded-2xl">
-        <img src={src} alt="">
+  <figure class="bg-white p-5 rounded-2xl grid place-content-center">
+    <img src={src} alt="" class="rounded-xl" />
+  </figure>
+  <div class="flex flex-col justify-between">
+    <div class="flex flex-col gap-5">
+      <h1 class="font-inter text-6xl text-white font-bold">{tittle}</h1>
+      <p class="font-inter text-white text-2xl">{text}</p>
     </div>
-    <div class="flex flex-col justify-between">
-        <h1 class="font-inter text-6xl text-white font-bold">{tittle}</h1>
-        <p class="font-inter text-white text-3xl">{text}</p>
-        <div class="flex flex-row gap-5">
-            <TechCard icon="iconTech/tech-angular.svg" name="Angular"></TechCard>
-            <TechCard icon="iconTech/tech-symfony.svg" name="Symfony"></TechCard>
-            <TechCard icon="iconTech/tech-tailwind.svg" name="Tailwind"></TechCard>
-        </div>
+    <div class="grid grid-cols-3 gap-x-7 gap-y-5">
+      <slot />
     </div>
+  </div>
 </article>

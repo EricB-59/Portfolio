@@ -1,19 +1,27 @@
 ---
-import NormalCard from "./card_projects/normal_card.astro";
-import SmallCard from "./card_projects/small_card.astro";
 import ProjectLeftCard from "./Cards/ProjectLeftCard.astro";
 import ProjectRightCard from "./Cards/ProjectRightCard.astro";
+import TechCard from "./Cards/TechCard.astro";
 ---
 
-<section class="flex flex-col gap-28">
-    <ProjectLeftCard 
-        src="projectsImgs/Project-Swanest-Img.png" 
-        tittle="Swanest" 
-        text="Swanest is an innovative dating web application designed to facilitate meaningful connections between people."
-    ></ProjectLeftCard>
-    <ProjectRightCard 
-        src="projectsImgs/Project-Swanest-Img.png" 
-        tittle="Swanest" 
-        text="Swanest is an innovative dating web application designed to facilitate meaningful connections between people."
-    ></ProjectRightCard>
+<section class="flex flex-col gap-20">
+  <ProjectLeftCard
+    src="projectsImgs/Project-Swanest-Img.png"
+    tittle="Swanest"
+    text="Swanest is an innovative dating web application designed to facilitate meaningful connections between people."
+  >
+    <TechCard icon="iconTech/tech-angular.svg" name="Angular" />
+    <TechCard icon="iconTech/tech-symfony.svg" name="Symfony" />
+    <TechCard icon="iconTech/tech-tailwind.svg" name="Tailwind" />
+    <TechCard icon="iconTech/tech-github.svg" name="Github" />
+    <TechCard icon="iconTech/tech-figma.svg" name="Figma" />
+  </ProjectLeftCard>
+  <ProjectRightCard
+    src="projectsImgs/Project-Veganashi-Img.png"
+    tittle="Veganashi"
+    text="Swanest is an innovative dating web application designed to facilitate meaningful connections between people."
+  >
+    <TechCard icon="iconTech/tech-wordpress.svg" name="Wordpress" />
+    <TechCard icon="iconTech/tech-figma.svg" name="Figma" />
+  </ProjectRightCard>
 </section>

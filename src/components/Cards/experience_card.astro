@@ -1,10 +1,9 @@
-<article class="bg-white rounded-2xl p-5 drop-shadow-[10px_10px_5px_rgba(119,153,120,100)]">
-    <h1 class="text-4xl">Experience tittle</h1>
-    <h2 class="text-2xl my-2.5">System trainee</h2>
-    <p class="text-2xl">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Ullam vel blanditiis libero officia ea cupiditate aliquam explicabo 
-        asperiores dolore cum laboriosam, quam sint tenetur necessitatibus ad illo enim 
-        eligendi eius.
-    </p>
+---
+const { title, work, desc } = Astro.props;
+---
+
+<article class="bg-white rounded-2xl p-5 drop-shadow-box h-full">
+  <h1 class="text-4xl">{title}</h1>
+  <h2 class="text-2xl my-2.5">{work}</h2>
+  <p class="text-2xl">{desc}</p>
 </article>

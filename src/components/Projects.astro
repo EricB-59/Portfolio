@@ -4,24 +4,39 @@ import ProjectRightCard from "./Cards/ProjectRightCard.astro";
 import TechCard from "./Cards/TechCard.astro";
 ---
 
+<h1 class="font-hand text-white text-8xl mt-24 mb-6">Projects</h1>
+
 <section class="flex flex-col gap-20">
   <ProjectLeftCard
-    src="projectsImgs/Project-Swanest-Img.png"
+    src="projects/Project-Swanest-Img.png"
     tittle="Swanest"
     text="Swanest is an innovative dating web application designed to facilitate meaningful connections between people."
   >
-    <TechCard icon="iconTech/tech-angular.svg" name="Angular" />
-    <TechCard icon="iconTech/tech-symfony.svg" name="Symfony" />
-    <TechCard icon="iconTech/tech-tailwind.svg" name="Tailwind" />
-    <TechCard icon="iconTech/tech-github.svg" name="Github" />
-    <TechCard icon="iconTech/tech-figma.svg" name="Figma" />
+    <TechCard icon="icons/tech-angular.svg" name="Angular" />
+    <TechCard icon="icons/tech-symfony.svg" name="Symfony" />
+    <TechCard icon="icons/tech-tailwind.svg" name="Tailwind" />
+    <TechCard icon="icons/github.svg" name="Github" />
+    <TechCard icon="icons/tech-figma.svg" name="Figma" />
   </ProjectLeftCard>
   <ProjectRightCard
-    src="projectsImgs/Project-Veganashi-Img.png"
+    src="projects/Project-Veganashi-Img.png"
     tittle="Veganashi"
-    text="Swanest is an innovative dating web application designed to facilitate meaningful connections between people."
+    text="Veganashi is a website of a vegan sushi restaurant that I was working on during my internship at We're Sinapsis."
   >
-    <TechCard icon="iconTech/tech-wordpress.svg" name="Wordpress" />
-    <TechCard icon="iconTech/tech-figma.svg" name="Figma" />
+    <TechCard icon="icons/tech-wordpress.svg" name="Wordpress" />
+    <TechCard icon="icons/tech-figma.svg" name="Figma" />
+    <TechCard icon="icons/tech-elementor.svg" name="Elementor" />
   </ProjectRightCard>
 </section>
+<article class="w-full grid place-content-center">
+  <div
+    class="flex flex-row bg-white w-auto h-auto p-5 mt-28 justify-around rounded-2xl gap-3 align-middle"
+  >
+    <a
+      target="_blank"
+      href="https://github.com/EricB-59?tab=repositories"
+      class="text-2xl font-hand">Repositories</a
+    >
+    <img src="icons/github.svg" />
+  </div>
+</article>

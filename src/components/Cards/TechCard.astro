@@ -2,7 +2,9 @@
 const { icon, name } = Astro.props;
 ---
 
-<div class="flex flex-row bg-white w-auto justify-baseline p-3 px-5 rounded-xl">
+<div
+  class="flex flex-row bg-white w-100% h-auto justify-baseline p-3 px-5 rounded-xl overflow-hidden"
+>
   <img src={icon} alt="Icon tech image" class="mr-3" />
-  <h1 class="text-3xl font-hand">{name}</h1>
+  <h1 class="text-2xl font-hand">{name}</h1>
 </div>

@@ -2,10 +2,18 @@
 import ExperienceCard from "./Cards/experience_card.astro";
 ---
 
+<h1 class="font-hand text-white text-8xl mt-24 mb-6">Experiences</h1>
+
 <section>
-  <ul class="[&>li]:my-10">
-    <li><ExperienceCard /></li>
-    <li><ExperienceCard /></li>
-    <li><ExperienceCard /></li>
-  </ul>
+  <div class="grid grid-cols-3 grid-rows-5 gap-15">
+    <div class="col-span-2 row-span-3">
+      <ExperienceCard title="Phonetasticltd" work="Web Developer" desc="" />
+    </div>
+    <div class="row-span-3 col-start-3">
+      <ExperienceCard title="Phonetasticltd" work="Web Developer" desc="" />
+    </div>
+    <div class="col-span-3 row-span-2 row-start-4">
+      <ExperienceCard title="Phonetasticltd" work="Web Developer" desc="" />
+    </div>
+  </div>
 </section>

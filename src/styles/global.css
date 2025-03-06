@@ -3,4 +3,7 @@
 @theme {
   --font-hand: "Handlee", sans-serif;
   --font-int: "Inter", sans-serif;
+
+  --drop-shadow-box: 10px 10px 5px rgba(119, 153, 120, 100);
+  --drop-shadow-letter: 4px 4px 2px rgba(119, 153, 120, 100);
 }

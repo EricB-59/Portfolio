@@ -12,8 +12,15 @@ const { tittle, time, text, src } = Astro.props;
       <h1 class="font-inter text-6xl text-white font-bold">{tittle}</h1>
       <p class="font-inter text-white text-2xl">{text}</p>
     </div>
-    <div class="grid grid-cols-3 gap-x-7 gap-y-5">
+    <div class="auto-grid">
       <slot />
     </div>
   </div>
 </article>
+<style>
+  .auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 32px;
+  }
+</style>

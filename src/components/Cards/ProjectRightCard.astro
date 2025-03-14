@@ -13,7 +13,9 @@ const { tittle, time, text, src } = Astro.props;
       <slot />
     </div>
   </div>
-  <figure class="bg-white p-5 rounded-2xl grid place-content-center">
+  <figure
+    class="bg-white p-5 rounded-2xl grid place-content-center drop-shadow-box"
+  >
     <img src={src} alt="" class="rounded-xl" />
   </figure>
 </article>

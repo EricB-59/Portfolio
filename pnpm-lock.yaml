@@ -8,12 +8,12 @@ importers:
 
   .:
     dependencies:
-      '@fontsource-variable/inter':
-        specifier: ^5.1.1
-        version: 5.1.1
       '@fontsource/handlee':
         specifier: ^5.1.1
         version: 5.1.1
+      '@fontsource/patrick-hand':
+        specifier: ^5.2.5
+        version: 5.2.5
       '@tailwindcss/vite':
         specifier: ^4.0.9
         version: 4.0.9(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1))
@@ -214,11 +214,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fontsource-variable/inter@5.1.1':
-    resolution: {integrity: sha512-OpXFTmiH6tHkYijMvQTycFKBLK4X+SRV6tet1m4YOUH7SzIIlMqDja+ocDtiCA72UthBH/vF+3ZtlMr2rN/wIw==}
-
   '@fontsource/handlee@5.1.1':
     resolution: {integrity: sha512-E8fu/VlJr8ExbV3sSAAwC2HFFf20K8tJ8GLqLjzLv0qFqsRL+EBa8BNvpO7UApBJUVJAIWHD31KsvvQw0hlMUg==}
+
+  '@fontsource/patrick-hand@5.2.5':
+    resolution: {integrity: sha512-uHpC+NmcmzXq+DgcEw7eiiDWaS5EFs7bepsZScxHNI9oP4TgJZidydKULNtuBiwQnFMTVFDZkemL8rohK//67w==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1806,9 +1806,9 @@ snapshots:
   '@esbuild/win32-x64@0.24.2':
     optional: true
 
-  '@fontsource-variable/inter@5.1.1': {}
-
   '@fontsource/handlee@5.1.1': {}
+
+  '@fontsource/patrick-hand@5.2.5': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:

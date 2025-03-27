@@ -4,6 +4,9 @@
   --font-special: "Handlee", sans-serif;
   --font-primary: "Patrick Hand", cursive;
 
+  --color-primary: #26231e;
+  --color-secondary: #7e5f3d;
+
   --drop-shadow-box: 10px 10px 5px rgba(119, 153, 120, 100);
   --drop-shadow-letter: 4px 4px 2px rgba(119, 153, 120, 100);
 }
